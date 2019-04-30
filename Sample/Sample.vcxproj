@@ -22,6 +22,7 @@
     <ProjectGuid>{3B5219B1-6414-4FA9-A9E1-BFC891076820}</ProjectGuid>
     <RootNamespace>Sample</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Note</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -136,7 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Note_More_Effective_CPP.h" />
+    <ClInclude Include="Note_MySQL_Basic.h" />
     <ClInclude Include="Note_TCP_IP.h" />
+    <ClInclude Include="Note_Thinking_in_CPP.h" />
     <ClInclude Include="temp.h" />
     <ClInclude Include="Note_The_Annotated_STL_Source.h" />
     <ClInclude Include="Widget.h" />

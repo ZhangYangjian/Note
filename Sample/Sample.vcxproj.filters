@@ -38,5 +38,11 @@
     <ClInclude Include="Note_The_Annotated_STL_Source.h">
       <Filter>Note</Filter>
     </ClInclude>
+    <ClInclude Include="Note_MySQL_Basic.h">
+      <Filter>Note</Filter>
+    </ClInclude>
+    <ClInclude Include="Note_Thinking_in_CPP.h">
+      <Filter>Note</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -203,7 +203,7 @@ public:
 //}
 
 
-#define Note_TCP_IP
+//#define Note_TCP_IP
 #ifdef Note_TCP_IP
 
 #include <WinSock2.h>
@@ -356,3 +356,24 @@ int main() {
 }
 
 #endif // !Note_More_Effective_CPP
+
+
+//aaaa  => aaaaa*  aaaaa
+// aaa  => a*a 
+// aaaab => a*a*a*ab
+
+bool isMatch(string s, string p) {
+	int nEnd = 0;
+	bool result = false;
+	int i, j;
+	for (i = 0; i < s.length();i++) {
+		
+	}
+	return false;
+}
+
+int main()
+{
+	isMatch("aaaab","a*a*b*a*b");
+	return 0;
+}
