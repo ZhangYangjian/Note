@@ -21,6 +21,9 @@
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="td.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Widget.h">
@@ -42,6 +45,15 @@
       <Filter>Note</Filter>
     </ClInclude>
     <ClInclude Include="Note_Thinking_in_CPP.h">
+      <Filter>Note</Filter>
+    </ClInclude>
+    <ClInclude Include="Note_Cpp_Concurrency_In_Action.h">
+      <Filter>Note</Filter>
+    </ClInclude>
+    <ClInclude Include="Note_MFC.h">
+      <Filter>Note</Filter>
+    </ClInclude>
+    <ClInclude Include="Note_Inside_The_CPP_Object_Model.h">
       <Filter>Note</Filter>
     </ClInclude>
   </ItemGroup>

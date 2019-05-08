@@ -29,6 +29,7 @@
 
 */
 
+ 
 
 #endif // !_NOTE_MORE_EFFECTIVE_CPP_H_
 

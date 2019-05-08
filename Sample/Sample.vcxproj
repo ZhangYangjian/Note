@@ -85,6 +85,7 @@
       <EnablePREfast>false</EnablePREfast>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -134,8 +135,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="td.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Note_Cpp_Concurrency_In_Action.h" />
+    <ClInclude Include="Note_Inside_The_CPP_Object_Model.h" />
+    <ClInclude Include="Note_MFC.h" />
     <ClInclude Include="Note_More_Effective_CPP.h" />
     <ClInclude Include="Note_MySQL_Basic.h" />
     <ClInclude Include="Note_TCP_IP.h" />

@@ -8,6 +8,7 @@
 
 using namespace std;
 
+/*
 class Base {
 public:
 	Base() { log(); }
@@ -19,7 +20,7 @@ class Driver:public Base{
 public:
 	void log() { cout << "Driver Log" << endl; }
 };
-
+*/
 
 //int main() {
 //	
@@ -209,6 +210,7 @@ public:
 #include <WinSock2.h>
 #include <vector>
 #include <deque>
+
 DWORD WINAPI Func(LPVOID lpParamter) {
 	WSADATA wsaData;
 	int port = 8009;
@@ -240,18 +242,18 @@ DWORD WINAPI Func(LPVOID lpParamter) {
 	char szMsg[1024];
 	memset(szMsg, 0, sizeof(szMsg));
 	// 等待客户请求到来
-	printf("服务端启动成功......等待客户发送数据...\n");
+	cout << "服务端启动成功......等待客户发送数据... " << endl;
 	while (1)
 	{
 		// 接收数据
 		if (SOCKET_ERROR != recvfrom(sockClient, szMsg, 10, 0, (SOCKADDR*)&addrClnt, &nLen))
 		{
-			printf("发送方：%s\n", szMsg);
+			cout << "发送方：szMsg " << endl;
 			char szSrvMsg[] = "收到...";
 			// 发送数据
 			sendto(sockClient, szSrvMsg, sizeof(szSrvMsg), 0, (SOCKADDR*)&addrClnt, nLen);
 		}
-		cout <<"Last Err:"<< WSAGetLastError() << endl;
+		cout << "Last Err:" << WSAGetLastError() << endl;
 	}
 	// 上面为无线循环，以下代码不会执行
 	// 关闭套接字
@@ -357,23 +359,102 @@ int main() {
 
 #endif // !Note_More_Effective_CPP
 
-
-//aaaa  => aaaaa*  aaaaa
-// aaa  => a*a 
-// aaaab => a*a*a*ab
-
-bool isMatch(string s, string p) {
-	int nEnd = 0;
-	bool result = false;
-	int i, j;
-	for (i = 0; i < s.length();i++) {
-		
+#define Note_Thinking_in_CPP
+#ifdef Note_Thinking_in_CPP
+#include<typeinfo>
+class GameBoard {
+public:
+	GameBoard() { cout << "GameBoard()" << endl; }
+	GameBoard(const GameBoard&) { cout << "GameBoard(const GameBoard&)" << endl; }
+	GameBoard& operator=(const GameBoard&) {
+		cout << "GameBoard::operator=()" << endl;
+		return *this;
 	}
-	return false;
-}
+	~GameBoard() { cout << "~GameBoard()" << endl; }
+};
 
-int main()
-{
-	isMatch("aaaab","a*a*b*a*b");
+class Game {
+	GameBoard gb;
+public:
+	Game() { cout << "Game()" << endl; }
+	Game(const Game& g) :gb(g.gb) {
+		cout << "Game(const Game&)" << endl;
+	}
+	Game(int) { cout << "Game(int)" << endl; }
+	Game& operator=(const Game& g) {
+		gb = g.gb;
+		cout << "Game::operator=()" << endl;
+		return *this;
+	}
+	class Other{};
+	operator Other()const {
+		return Other();
+	}
+	~Game() { cout << "~Game()" << endl; }
+};
+
+class Chess:public Game{};
+void f(Game::Other){}
+class Checkers :public Game {
+public:
+	Checkers() { cout << "Checkers()" << endl; }
+	Checkers(const Checkers&c) :Game(c) {
+		cout << "Checkers(const Checkers& c)" << endl;
+	}
+	Checkers& operator=(const Checkers& c) {
+		Game::operator = (c);
+		cout << "Checkers::operator=()" << endl;
+		return *this;
+	}
+};
+
+class Base {
+public:
+	virtual ~Base()  = 0;
+	void f() { cout << "Base::f()" << endl; }
+};
+
+Base::~Base() { f(); cout << "Base::~Base()" << endl; }
+
+class Driver:public Base {
+public:
+	~Driver() { f(); cout << "~Driver()" << endl; }
+};
+
+class Shape{
+public:virtual ~Shape(){} 
+	const int c = 10;
+	int a, b;
+	void fun()const {
+		int bc = a;
+	}
+	void fun2(){
+		a = 2;
+	}
+};
+class Circle :public Shape{};
+class Square:public Shape{};
+class Other {};
+ 
+extern void show();
+
+Circle f() { 
+	return  Circle();
+}
+void g1(Circle& x) { }
+void g2(const Circle&){}
+
+
+ const int ng = 10;
+
+#pragma pack(2)
+int main() {
+
+
+
+	system("pause");
 	return 0;
 }
+
+#endif // Note_Thinking_in_CPP
+
