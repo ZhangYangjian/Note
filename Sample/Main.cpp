@@ -425,11 +425,11 @@ class Shape{
 public:virtual ~Shape(){} 
 	const int c = 10;
 	int a, b;
-	void fun()const {
-		int bc = a;
+	void fun(int arg) {
+		a = arg;
 	}
-	void fun2(){
-		a = 2;
+	void print(){
+		cout << "Sharp::a:"<<a << endl;
 	}
 };
 class Circle :public Shape{};
@@ -449,7 +449,6 @@ void g2(const Circle&){}
 
 #pragma pack(2)
 int main() {
-
 
 
 	system("pause");

@@ -1,3 +1,9 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Sample.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Sample.vcxproj -> E:\Pratice\C++\EffectiveC++\Sample\Debug\Note.exe
-  Sample.vcxproj -> E:\Pratice\C++\EffectiveC++\Sample\Debug\Note.pdb (Full PDB)
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.00.24215.1 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /ZI /W4 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /FA /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+  
+  Main.cpp
+e:\pratice\c++\effectivec++\sample\sample\main.cpp(444): warning C4100: “x”: 未引用的形参
+e:\pratice\c++\effectivec++\sample\sample\main.cpp(454): error C2660: “Shape::fun”: 函数不接受 2 个参数
