@@ -2,8 +2,11 @@
   用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.00.24215.1 版
   版权所有(C) Microsoft Corporation。保留所有权利。
   
-  cl /c /ZI /W4 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /FA /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+  cl /c /ZI /W4 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /FA /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt td.cpp
   
-  Main.cpp
-e:\pratice\c++\effectivec++\sample\sample\main.cpp(444): warning C4100: “x”: 未引用的形参
-e:\pratice\c++\effectivec++\sample\sample\main.cpp(454): error C2660: “Shape::fun”: 函数不接受 2 个参数
+  td.cpp
+e:\pratice\c++\effectivec++\sample\sample\td.cpp(19): error C2086: “int a”: 重定义
+  e:\pratice\c++\effectivec++\sample\sample\td.cpp(17): note: 参见“a”的声明
+e:\pratice\c++\effectivec++\sample\sample\td.cpp(18): warning C4477: “printf”: 格式字符串“%x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+e:\pratice\c++\effectivec++\sample\sample\td.cpp(22): warning C4477: “printf”: 格式字符串“%x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+e:\pratice\c++\effectivec++\sample\sample\td.cpp(24): warning C4477: “printf”: 格式字符串“%x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
