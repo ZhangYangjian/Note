@@ -9,4 +9,744 @@
 INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
+PUBLIC	?a@Empty@@2HA					; Empty::a
+_DATA	SEGMENT
+?a@Empty@@2HA DD 01H					; Empty::a
+_DATA	ENDS
+PUBLIC	?__empty_global_delete@@YAXPAX@Z		; __empty_global_delete
+PUBLIC	?__empty_global_delete@@YAXPAXI@Z		; __empty_global_delete
+PUBLIC	??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+PUBLIC	?display@@YAXABVWindow@@@Z			; display
+PUBLIC	?func1@Base@@UAEXXZ				; Base::func1
+PUBLIC	?func2@Base@@UAEXXZ				; Base::func2
+PUBLIC	??0Base@@QAE@XZ					; Base::Base
+PUBLIC	??0Base@@QAE@ABV0@@Z				; Base::Base
+PUBLIC	?func1@Dirver@@UAEXXZ				; Dirver::func1
+PUBLIC	?func2@Dirver@@UAEXXZ				; Dirver::func2
+PUBLIC	??0Dirver@@QAE@XZ				; Dirver::Dirver
+PUBLIC	?Hash@@YAIPBDI@Z				; Hash
+PUBLIC	?Sum@@YAHHH@Z					; Sum
+PUBLIC	_main
+PUBLIC	??_7Base@@6B@					; Base::`vftable'
+PUBLIC	??_7Dirver@@6B@					; Dirver::`vftable'
+PUBLIC	??_C@_05PDJBBECF@pause?$AA@			; `string'
+PUBLIC	??_R4Base@@6B@					; Base::`RTTI Complete Object Locator'
+PUBLIC	??_R0?AVBase@@@8				; Base `RTTI Type Descriptor'
+PUBLIC	??_R3Base@@8					; Base::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2Base@@8					; Base::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@Base@@8				; Base::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R4Dirver@@6B@				; Dirver::`RTTI Complete Object Locator'
+PUBLIC	??_R0?AVDirver@@@8				; Dirver `RTTI Type Descriptor'
+PUBLIC	??_R3Dirver@@8					; Dirver::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2Dirver@@8					; Dirver::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@Dirver@@8				; Dirver::`RTTI Base Class Descriptor at (0,-1,0,64)'
+EXTRN	__imp__system:PROC
+EXTRN	__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z:PROC
+EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z:PROC
+EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z:PROC
+EXTRN	__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z:PROC
+EXTRN	__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ:PROC
+EXTRN	@_RTC_CheckStackVars@8:PROC
+EXTRN	@__security_check_cookie@4:PROC
+EXTRN	__RTC_CheckEsp:PROC
+EXTRN	__RTC_InitBase:PROC
+EXTRN	__RTC_Shutdown:PROC
+EXTRN	??_7type_info@@6B@:QWORD			; type_info::`vftable'
+EXTRN	__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A:BYTE
+EXTRN	___security_cookie:DWORD
+;	COMDAT rtc$TMZ
+rtc$TMZ	SEGMENT
+__RTC_Shutdown.rtc$TMZ DD FLAT:__RTC_Shutdown
+rtc$TMZ	ENDS
+;	COMDAT rtc$IMZ
+rtc$IMZ	SEGMENT
+__RTC_InitBase.rtc$IMZ DD FLAT:__RTC_InitBase
+rtc$IMZ	ENDS
+;	COMDAT ??_R1A@?0A@EA@Dirver@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@Dirver@@8 DD FLAT:??_R0?AVDirver@@@8	; Dirver::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3Dirver@@8
+rdata$r	ENDS
+;	COMDAT ??_R2Dirver@@8
+rdata$r	SEGMENT
+??_R2Dirver@@8 DD FLAT:??_R1A@?0A@EA@Dirver@@8		; Dirver::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@Base@@8
+rdata$r	ENDS
+;	COMDAT ??_R3Dirver@@8
+rdata$r	SEGMENT
+??_R3Dirver@@8 DD 00H					; Dirver::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	02H
+	DD	FLAT:??_R2Dirver@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVDirver@@@8
+data$r	SEGMENT
+??_R0?AVDirver@@@8 DD FLAT:??_7type_info@@6B@		; Dirver `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVDirver@@', 00H
+data$r	ENDS
+;	COMDAT ??_R4Dirver@@6B@
+rdata$r	SEGMENT
+??_R4Dirver@@6B@ DD 00H					; Dirver::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AVDirver@@@8
+	DD	FLAT:??_R3Dirver@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@Base@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@Base@@8 DD FLAT:??_R0?AVBase@@@8		; Base::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3Base@@8
+rdata$r	ENDS
+;	COMDAT ??_R2Base@@8
+rdata$r	SEGMENT
+??_R2Base@@8 DD	FLAT:??_R1A@?0A@EA@Base@@8		; Base::`RTTI Base Class Array'
+rdata$r	ENDS
+;	COMDAT ??_R3Base@@8
+rdata$r	SEGMENT
+??_R3Base@@8 DD	00H					; Base::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	01H
+	DD	FLAT:??_R2Base@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVBase@@@8
+data$r	SEGMENT
+??_R0?AVBase@@@8 DD FLAT:??_7type_info@@6B@		; Base `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVBase@@', 00H
+data$r	ENDS
+;	COMDAT ??_R4Base@@6B@
+rdata$r	SEGMENT
+??_R4Base@@6B@ DD 00H					; Base::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AVBase@@@8
+	DD	FLAT:??_R3Base@@8
+rdata$r	ENDS
+;	COMDAT ??_C@_05PDJBBECF@pause?$AA@
+CONST	SEGMENT
+??_C@_05PDJBBECF@pause?$AA@ DB 'pause', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_7Dirver@@6B@
+CONST	SEGMENT
+??_7Dirver@@6B@ DD FLAT:??_R4Dirver@@6B@		; Dirver::`vftable'
+	DD	FLAT:?func1@Dirver@@UAEXXZ
+	DD	FLAT:?func2@Dirver@@UAEXXZ
+CONST	ENDS
+;	COMDAT ??_7Base@@6B@
+CONST	SEGMENT
+??_7Base@@6B@ DD FLAT:??_R4Base@@6B@			; Base::`vftable'
+	DD	FLAT:?func1@Base@@UAEXXZ
+	DD	FLAT:?func2@Base@@UAEXXZ
+CONST	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT _main
+_TEXT	SEGMENT
+_p3$ = -120						; size = 4
+_p2$ = -108						; size = 4
+_p1$ = -96						; size = 4
+_pbs2$ = -84						; size = 4
+_pbs$ = -72						; size = 4
+_bs$ = -60						; size = 4
+_pd2$ = -48						; size = 4
+_pd1$ = -36						; size = 4
+_d2$ = -24						; size = 4
+_d1$ = -12						; size = 4
+__$ArrayPad$ = -4					; size = 4
+_main	PROC						; COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 497
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 316				; 0000013cH
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-316]
+	mov	ecx, 79					; 0000004fH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	mov	DWORD PTR __$ArrayPad$[ebp], eax
+; Line 500
+	lea	ecx, DWORD PTR _d1$[ebp]
+	call	??0Dirver@@QAE@XZ
+; Line 501
+	lea	ecx, DWORD PTR _d2$[ebp]
+	call	??0Dirver@@QAE@XZ
+; Line 502
+	lea	eax, DWORD PTR _d1$[ebp]
+	mov	DWORD PTR _pd1$[ebp], eax
+; Line 503
+	lea	eax, DWORD PTR _d2$[ebp]
+	mov	DWORD PTR _pd2$[ebp], eax
+; Line 504
+	lea	eax, DWORD PTR _d1$[ebp]
+	push	eax
+	lea	ecx, DWORD PTR _bs$[ebp]
+	call	??0Base@@QAE@ABV0@@Z
+; Line 505
+	lea	eax, DWORD PTR _bs$[ebp]
+	mov	DWORD PTR _pbs$[ebp], eax
+; Line 506
+	lea	eax, DWORD PTR _d1$[ebp]
+	mov	DWORD PTR _pbs2$[ebp], eax
+; Line 507
+	mov	eax, DWORD PTR _pd1$[ebp]
+	mov	DWORD PTR _p1$[ebp], eax
+; Line 508
+	mov	eax, DWORD PTR _pd2$[ebp]
+	mov	DWORD PTR _p2$[ebp], eax
+; Line 510
+	mov	eax, DWORD PTR _pbs$[ebp]
+	mov	DWORD PTR _p3$[ebp], eax
+; Line 523
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	5
+	push	13					; 0000000dH
+	call	?Sum@@YAHHH@Z				; Sum
+	add	esp, 8
+	mov	edi, esp
+	push	eax
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	edi, esp
+	call	__RTC_CheckEsp
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 524
+	mov	esi, esp
+	push	OFFSET ??_C@_05PDJBBECF@pause?$AA@
+	call	DWORD PTR __imp__system
+	add	esp, 4
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 525
+	xor	eax, eax
+; Line 526
+	push	edx
+	mov	ecx, ebp
+	push	eax
+	lea	edx, DWORD PTR $LN7@main
+	call	@_RTC_CheckStackVars@8
+	pop	eax
+	pop	edx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	ecx, DWORD PTR __$ArrayPad$[ebp]
+	xor	ecx, ebp
+	call	@__security_check_cookie@4
+	add	esp, 316				; 0000013cH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+	npad	2
+$LN7@main:
+	DD	3
+	DD	$LN6@main
+$LN6@main:
+	DD	-12					; fffffff4H
+	DD	4
+	DD	$LN3@main
+	DD	-24					; ffffffe8H
+	DD	4
+	DD	$LN4@main
+	DD	-60					; ffffffc4H
+	DD	4
+	DD	$LN5@main
+$LN5@main:
+	DB	98					; 00000062H
+	DB	115					; 00000073H
+	DB	0
+$LN4@main:
+	DB	100					; 00000064H
+	DB	50					; 00000032H
+	DB	0
+$LN3@main:
+	DB	100					; 00000064H
+	DB	49					; 00000031H
+	DB	0
+_main	ENDP
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?Sum@@YAHHH@Z
+_TEXT	SEGMENT
+_and$ = -20						; size = 4
+_xor$ = -8						; size = 4
+_a$ = 8							; size = 4
+_b$ = 12						; size = 4
+?Sum@@YAHHH@Z PROC					; Sum, COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 485
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 216				; 000000d8H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-216]
+	mov	ecx, 54					; 00000036H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+$LN2@Sum:
+; Line 488
+	cmp	DWORD PTR _b$[ebp], 0
+	je	SHORT $LN3@Sum
+; Line 489
+	mov	eax, DWORD PTR _a$[ebp]
+	xor	eax, DWORD PTR _b$[ebp]
+	mov	DWORD PTR _xor$[ebp], eax
+; Line 490
+	mov	eax, DWORD PTR _a$[ebp]
+	and	eax, DWORD PTR _b$[ebp]
+	mov	DWORD PTR _and$[ebp], eax
+; Line 491
+	mov	eax, DWORD PTR _xor$[ebp]
+	mov	DWORD PTR _a$[ebp], eax
+; Line 492
+	mov	eax, DWORD PTR _and$[ebp]
+	shl	eax, 1
+	mov	DWORD PTR _b$[ebp], eax
+; Line 493
+	jmp	SHORT $LN2@Sum
+$LN3@Sum:
+; Line 494
+	mov	eax, DWORD PTR _a$[ebp]
+; Line 495
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?Sum@@YAHHH@Z ENDP					; Sum
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?Hash@@YAIPBDI@Z
+_TEXT	SEGMENT
+_hash$ = -8						; size = 4
+_arKey$ = 8						; size = 4
+_keyLength$ = 12					; size = 4
+?Hash@@YAIPBDI@Z PROC					; Hash, COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 475
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+; Line 476
+	mov	DWORD PTR _hash$[ebp], 0
+; Line 477
+	jmp	SHORT $LN4@Hash
+$LN2@Hash:
+	mov	eax, DWORD PTR _keyLength$[ebp]
+	sub	eax, 1
+	mov	DWORD PTR _keyLength$[ebp], eax
+$LN4@Hash:
+	cmp	DWORD PTR _keyLength$[ebp], 0
+	jbe	SHORT $LN3@Hash
+; Line 478
+	mov	eax, DWORD PTR _hash$[ebp]
+	shl	eax, 5
+	sub	eax, DWORD PTR _hash$[ebp]
+	mov	ecx, DWORD PTR _arKey$[ebp]
+	movsx	edx, BYTE PTR [ecx]
+	add	eax, edx
+	mov	DWORD PTR _hash$[ebp], eax
+	mov	eax, DWORD PTR _arKey$[ebp]
+	add	eax, 1
+	mov	DWORD PTR _arKey$[ebp], eax
+; Line 479
+	jmp	SHORT $LN2@Hash
+$LN3@Hash:
+; Line 480
+	mov	eax, DWORD PTR _hash$[ebp]
+; Line 481
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?Hash@@YAIPBDI@Z ENDP					; Hash
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??0Dirver@@QAE@XZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+??0Dirver@@QAE@XZ PROC					; Dirver::Dirver, COMDAT
+; _this$ = ecx
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	??0Base@@QAE@XZ
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	DWORD PTR [eax], OFFSET ??_7Dirver@@6B@
+	mov	eax, DWORD PTR _this$[ebp]
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??0Dirver@@QAE@XZ ENDP					; Dirver::Dirver
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?func2@Dirver@@UAEXXZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+?func2@Dirver@@UAEXXZ PROC				; Dirver::func2, COMDAT
+; _this$ = ecx
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 461
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?func2@Dirver@@UAEXXZ ENDP				; Dirver::func2
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?func1@Dirver@@UAEXXZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+?func1@Dirver@@UAEXXZ PROC				; Dirver::func1, COMDAT
+; _this$ = ecx
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 460
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?func1@Dirver@@UAEXXZ ENDP				; Dirver::func1
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??0Base@@QAE@ABV0@@Z
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+___that$ = 8						; size = 4
+??0Base@@QAE@ABV0@@Z PROC				; Base::Base, COMDAT
+; _this$ = ecx
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	DWORD PTR [eax], OFFSET ??_7Base@@6B@
+	mov	eax, DWORD PTR _this$[ebp]
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	4
+??0Base@@QAE@ABV0@@Z ENDP				; Base::Base
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??0Base@@QAE@XZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+??0Base@@QAE@XZ PROC					; Base::Base, COMDAT
+; _this$ = ecx
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	DWORD PTR [eax], OFFSET ??_7Base@@6B@
+	mov	eax, DWORD PTR _this$[ebp]
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??0Base@@QAE@XZ ENDP					; Base::Base
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?func2@Base@@UAEXXZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+?func2@Base@@UAEXXZ PROC				; Base::func2, COMDAT
+; _this$ = ecx
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 455
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?func2@Base@@UAEXXZ ENDP				; Base::func2
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?func1@Base@@UAEXXZ
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+?func1@Base@@UAEXXZ PROC				; Base::func1, COMDAT
+; _this$ = ecx
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 454
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?func1@Base@@UAEXXZ ENDP				; Base::func1
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?display@@YAXABVWindow@@@Z
+_TEXT	SEGMENT
+_w$ = 8							; size = 4
+?display@@YAXABVWindow@@@Z PROC				; display, COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\widget.h
+; Line 20
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+; Line 21
+	mov	eax, DWORD PTR _w$[ebp]
+	mov	edx, DWORD PTR [eax]
+	mov	esi, esp
+	mov	ecx, DWORD PTR _w$[ebp]
+	mov	eax, DWORD PTR [edx]
+	call	eax
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 22
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 192				; 000000c0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?display@@YAXABVWindow@@@Z ENDP				; display
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z
+_TEXT	SEGMENT
+__Ostr$ = 8						; size = 4
+??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z PROC ; std::endl<char,std::char_traits<char> >, COMDAT
+; File d:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream
+; Line 991
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+; Line 992
+	mov	esi, esp
+	push	10					; 0000000aH
+	mov	eax, DWORD PTR __Ostr$[ebp]
+	mov	ecx, DWORD PTR [eax]
+	mov	edx, DWORD PTR __Ostr$[ebp]
+	add	edx, DWORD PTR [ecx+4]
+	mov	ecx, edx
+	call	DWORD PTR __imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+	mov	esi, esp
+	movzx	eax, al
+	push	eax
+	mov	ecx, DWORD PTR __Ostr$[ebp]
+	call	DWORD PTR __imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 993
+	mov	esi, esp
+	mov	ecx, DWORD PTR __Ostr$[ebp]
+	call	DWORD PTR __imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 994
+	mov	eax, DWORD PTR __Ostr$[ebp]
+; Line 995
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 192				; 000000c0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ENDP ; std::endl<char,std::char_traits<char> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?__empty_global_delete@@YAXPAXI@Z
+_TEXT	SEGMENT
+___formal$ = 8						; size = 4
+___formal$ = 12						; size = 4
+?__empty_global_delete@@YAXPAXI@Z PROC			; __empty_global_delete, COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 532
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?__empty_global_delete@@YAXPAXI@Z ENDP			; __empty_global_delete
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?__empty_global_delete@@YAXPAX@Z
+_TEXT	SEGMENT
+___formal$ = 8						; size = 4
+?__empty_global_delete@@YAXPAX@Z PROC			; __empty_global_delete, COMDAT
+; File e:\pratice\c++\effectivec++\sample\sample\main.cpp
+; Line 532
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?__empty_global_delete@@YAXPAX@Z ENDP			; __empty_global_delete
+_TEXT	ENDS
 END
