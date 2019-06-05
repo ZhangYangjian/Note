@@ -443,7 +443,7 @@ int main() {
 
 #endif // Note_Thinking_in_CPP
 
-#define Note_Inside_The_CPP_Object_Model
+//#define Note_Inside_The_CPP_Object_Model
 #ifdef Note_Inside_The_CPP_Object_Model
 #include <iomanip> 
 static int foo;
@@ -524,8 +524,31 @@ int main() {
 	system("pause");
 	return 0;
 }
- 
+
 #endif // Note_Inside_The_CPP_Object_Model
+
+
+//test_co
+#include<stdio.h>
+#define Max(x, y) ({				\
+	 decltype(x) _max1 = (x);			\
+	 decltype(y) _max2 = (y);			\
+	(void) (&_max1 == &_max2);		\
+	_max1 > _max2 ? _max1 : _max2; })
+
+
+
+
+	int main() {
+
+		int i = 2;
+		int j = 5;
+		std::cout << Max(1, 2);
+		//printf("max=%d\n", Max( i , j ));
+		
+		return 0;
+	}
+
 
 
 
